@@ -1,4 +1,4 @@
-import LogPage from "./logpage.jsx";
+import LogPage from "./Logpage.jsx";
 
 function App() {
     return(
