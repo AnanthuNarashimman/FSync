@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 70px 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: white;
+    z-index: 100;
+    filter: drop-shadow(5px 0px 5px #000000b0);
+}
+
+.navbar .navbuttons {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-right: 15px;
+}
+
+.navbar .navbuttons button {
+    padding: 5px;
+    font-family: 'Poppins';
+    font-size: 17px;
+    width: 100px;
+    border-radius: 5px;
+    border: 3px solid #4635B1;
+    color: #4635B1;
+    background: white;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.navbar .navbuttons button:hover {
+    transform: translateX(-2.5px) translateY(-2px);
+    filter: drop-shadow(3px 2px 2px #000000b0);
+}
+
+.navbar .navbuttons .about {
+    padding: 8px;
+    width: auto;
+    font-family: 'Poppins';
+    border: none;
+    border-radius: 25px;
+    background: #5c64db;
+    color: white;
+    cursor: pointer;
+    border: 3px solid #5c64db;
+    transition: .3s ease;
+}
+
+.navbar .navbuttons button.active {
+    background: #4635B1;
+    color: white;
+}
+
+.navbar .about:hover {
+    background: white;
+    color: #5c64db;
+}
+
+.logo {
+    width: auto;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.logarea {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 1fr;
+    height: calc(100vh - 70px);
+}
+
+.logarea .imgarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logarea .imgarea img{
+    width: 90%;
+    height: auto;
+}
+
+.logarea .formarea {
+    background: #7faef2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    color: white;
+    overflow: hidden;
+}
+
+.logarea .formarea h1 {
+    color: #4635B1;
+    font-size: 40px;
+}
+
+.logarea .formarea h1 span {
+    color: #D4F6FF;
+}
+
+.logarea .formarea .desarea {
+    text-align: center;
+}
+
+.logarea .formarea .desarea h3 {
+    font-size: 30px;
+    margin-top: -5px;
+}
+
+.logarea .formarea .desarea p {
+    font-size: 17px;
+}
+
+.formarea .formbox {
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    transform: translateX(-25%);
+    transition: .5s ease;
+}
+
+.formbox.MoveToSignUp {
+    transform: translateX(25%);
+}
+
+.formbox.MoveToSignIn {
+    transform: translateX(-25%);
+}
+
+.formarea .formbox .form {
+    width: 50%;
+}
+
+.formarea .formbox .form h2 {
+    text-align: center;
+}
+
+.formarea .formbox form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+}
+
+.formarea .formbox .inputarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    position: relative;
+}
+
+.formarea .formbox .inputarea label {
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    font-size: 16px;
+    transform: translateY(-50%);
+    transition: .5s ease;
+    color: white;
+}
+
+.formarea .formbox .inputarea input {
+    width: 60%;
+    border: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    padding: 5px;
+    font-family: 'Nunito sans';
+    font-weight: 800;
+    color: #4635B1;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.formarea .formbox input[type='submit'] {
+    padding: 10px;
+    border-radius: 15px;
+    background: #4635B1;
+    border: 3px solid #4635B1;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+
+.formarea .formbox input[type='submit']:hover {
+    background: white;
+    color: #4635B1;
+}
+
+.formarea .formbox .buttonarea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.formarea .formbox .buttonarea .continueggl {
+    height: 35px;
+    width: 35px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 2px #000000b0);
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.formarea .formbox .buttonarea .continueggl:hover {
+    transform: translateY(-2px) translateX(-2px);
+    filter: drop-shadow(4px 4px 4px #000000b0);
+}
+
+.formarea .formbox .buttonarea .continueggl img {
+    height: 90%;
+    width: auto;
+}
+
+@media (max-width:768px) {
+
+    body {
+        margin: 50px 0 0 0 ;
+        overflow: auto;
+    }
+
+    .logo {
+        height: 50px;
+        width: auto;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .navbar {
+        height: 50px;
+    }
+
+    .navbar .navbuttons .pcbtn {
+        display: none;
+    }
+
+    .navbar .navbuttons .about {
+        padding: 4px;
+    }
+
+    .logarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 50px);
+    }
+
+    .logarea .imgarea {
+        display: none;
+    }
+
+    .logarea .formarea h1 {
+        margin-top: -20px;
+    }
+
+    .formarea .formbox {
+        margin-top: -10px;
+        transition: .4s ease;
+    }
+
+    .formarea .formbox .inputarea input {
+        width: 80%;
+    }
+
+    .formarea .formbox .inputarea label {
+        left: 10%;
+    }
+
+    .logarea .formarea .desarea h3 {
+        margin-top: -15px;
+    }
+
+    .logarea .formarea .desarea p {
+        margin-top: -30px;
+    }
+
+    .formarea .formbox form p {
+        margin-top: -3px;
+    }
+}
