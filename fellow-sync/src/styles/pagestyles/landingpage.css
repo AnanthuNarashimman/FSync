@@ -1,0 +1,361 @@
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    margin: 70px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::-webkit-scrollbar {
+    width:5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #4635B1;
+    border-radius: 10px;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(254, 252, 252, 0.942);
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: drop-shadow(0px 0.5px 2px #666);
+    z-index: 100;
+}
+
+.logo {
+    width: 10%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 350px;
+    height: auto;
+}
+
+.nav-items {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Poppins';
+}
+
+.nav-items a {
+    color: #5c64db;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .3s ease;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-items a:hover {
+    transform: translateY(-3px);
+    background: #5c64db;
+    color: white;
+}
+
+.logbtn {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logbtn button {
+    padding: 10px 20px;
+    width: auto;
+    font-family: 'Poppins';
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    background: #4635B1;
+    color: white;
+    cursor: pointer;
+    border: 3px solid #4635B1;
+    transition: .3s ease;
+}
+
+.logbtn button:hover {
+    background: white;
+    color: #4635B1;
+    filter: drop-shadow(3px 2px 2px #000000b0);
+}
+
+.mob-nav {
+    display: none;
+}
+
+.home {
+    margin: auto;
+    margin-top: -50px;
+    width: 100%;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    background-image: url('../../assets/Images/Learning Background-2.jpg');
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-size: cover;
+    box-shadow: 1px 2px 5px #0000005f;
+}
+
+.home .homeText {
+    text-align: center;
+    font-family: 'Nunito sans';
+    color: #606af8;
+    text-shadow: 1px 1.75px 5px #00000089;
+}
+
+.home .homeText .homeTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fbfbfb60;
+    backdrop-filter: blur(30px);
+    padding: 20px;
+    padding-right: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    clip-path: inset(0px -10px -20px -10px);
+    text-align: center;
+    position: relative;
+    left: 8%;
+}
+
+.home .homeText h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.home .homeText h1 span {
+    color: #66dcfc;
+}
+
+.home .homeText h2 {
+    width: 100%;
+    margin-left: 30px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.home .homeText p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+.home .homeItems {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .homeImage {
+    background: #6a73eb;
+    /* background: #ffb703; */
+    border-radius: 58% 42% 64% 36% / 30% 35% 65% 70%  ;
+    width: 90%;
+    height: 80%;
+    margin-left: 40px;
+    /* filter: drop-shadow(2px 5px 5px rgb(71, 71, 245)); */
+}
+
+.home .homeImage img {
+    width: 90%;
+    filter: invert(1);
+}
+
+.mission {
+    width: 100%;
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.mission h1 {
+    font-family: 'Figtree';
+    text-align: center;
+    font-size: 60px;
+    color: #3a0ca3;
+    text-shadow: 1px 2px 5px rgba(128, 128, 128, 0.508);
+}
+
+.mission .mission-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40rem;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.mission .mission-wrapper .mission-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    border-radius: 20px;
+    background: #4C62BF;
+    height: 100%;
+    filter: drop-shadow(5px 2px 5px rgba(128, 128, 128, 0.859));
+    transition: .3s ease;
+}
+
+.mission .mission-wrapper .mission-item:hover {
+    transform: translateX(-3px) translateY(-3px);
+    filter: drop-shadow(8px 5px 5px rgba(128, 128, 128, 0.859));
+}
+
+.mission .mission-wrapper .mission-item .mission-img {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    background: #5A87E3;
+    border-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.mission .mission-wrapper .mission-item .mission-img img {
+    height: 60%;
+    width: auto;
+    filter: invert(1);
+}
+
+.mission .mission-wrapper .mission-item .mission-text {
+    text-align: center;
+    color: #E9ECEF;
+    font-family: 'figtree';
+    padding: 20px 30px;
+}
+
+.mission .mission-wrapper .mission-item .mission-text h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.mission .mission-wrapper .mission-item .mission-text p {
+    font-size: 19px;
+    line-height: 1.2;
+    word-spacing: 1pt;
+    padding-bottom: 15px;
+}
+
+.contact {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 40px;
+    color: #3a0ca3;
+    text-shadow: 1px 2px 5px rgba(128, 128, 128, 0.508);
+}
+
+@media (max-width: 678px) {
+    body {
+        margin: 70px 0 0 0 ;
+        overflow: auto;
+    }
+
+    .logo {
+        height: 50px;
+        width: 25%;
+    }
+
+    .logo img {
+        width: 250px;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    .navbar .nav-items {
+        position: absolute;
+        flex-direction: column;
+        top: -500px;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 70px;
+        width: 70%;
+        padding: 30px 15px;
+        background: #4C62BF;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .3s ease;
+        z-index: -3;
+    }
+
+    .navbar .nav-items a {
+        color: white;
+    }
+
+    .navbar .nav-items.nav-active {
+        top: 80px;
+    }
+
+    .navbar .mob-nav {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        height: 40px;
+        width: 23%;
+        background: #4C62BF;
+        padding: 2px 5px;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Poppins';
+    }
+
+    .navbar .downicon {
+        display: block;
+        transition: .4s ease;
+    }
+
+    .navbar .downicon.ham-active {
+        transform: rotate(-180deg);
+    }
+
+    .logbtn {
+        width: 28%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logbtn button {
+        height: 35px;
+        padding: 0px 8px;
+        margin-right: 5px;
+    }
+
+}

@@ -1,0 +1,65 @@
+* {
+    font-family: 'figtree';
+}
+
+.features-section {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.features-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.features-title {
+    text-align: center;
+    font-size: 60px;
+    color: #3a0ca3;
+    text-shadow: 1px 2px 5px rgba(128, 128, 128, 0.508);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card h3 {
+    font-size: 25px;
+}
+
+.feature-card p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4635B1;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
