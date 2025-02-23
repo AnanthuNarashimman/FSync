@@ -1,4 +1,4 @@
-import logo from '../assets/Images/FSync.svg';
+import logo from '../assets/Images/Fsync.svg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleDown} from '@fortawesome/free-solid-svg-icons'
 import '../styles/pagestyles/landingpage.css';
