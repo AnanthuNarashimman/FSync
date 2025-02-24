@@ -24,7 +24,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     align-items: center;
     background: rgba(254, 252, 252, 0.942);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     filter: drop-shadow(0px 0.5px 2px #666);
@@ -55,7 +55,7 @@ body::-webkit-scrollbar-thumb {
 
 .nav-items a {
     color: #5c64db;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 500;
     text-decoration: none;
     transition: all .3s ease;
@@ -134,7 +134,7 @@ body::-webkit-scrollbar-thumb {
     padding: 20px;
     padding-right: 50px;
     border-radius: 25px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.302);
     clip-path: inset(0px -10px -20px -10px);
     text-align: center;
     position: relative;
@@ -218,7 +218,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     width: 30%;
     border-radius: 20px;
-    background: #4C62BF;
+    background: #5A87E3;
     height: 100%;
     filter: drop-shadow(5px 2px 5px rgba(128, 128, 128, 0.859));
     transition: .3s ease;
@@ -253,6 +253,7 @@ body::-webkit-scrollbar-thumb {
     color: #E9ECEF;
     font-family: 'figtree';
     padding: 20px 30px;
+    margin-top: -20px;
 }
 
 .mission .mission-wrapper .mission-item .mission-text h2 {
@@ -280,13 +281,14 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 678px) {
     body {
-        margin: 70px 0 0 0 ;
+        margin: 120px 0 0 0 ;
         overflow: auto;
     }
 
     .logo {
         height: 50px;
         width: 25%;
+        z-index: -1;
     }
 
     .logo img {
@@ -309,8 +311,8 @@ body::-webkit-scrollbar-thumb {
         background: #4C62BF;
         border-radius: 10px;
         overflow: hidden;
-        transition: .3s ease;
-        z-index: -3;
+        transition: 4s ease;
+        z-index: -100;
     }
 
     .navbar .nav-items a {
@@ -356,6 +358,82 @@ body::-webkit-scrollbar-thumb {
         height: 35px;
         padding: 0px 8px;
         margin-right: 5px;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 38rem;
+        padding: 20px;
+    }
+
+    .home .homeText .homeTextContainer {
+        left: 0;
+        backdrop-filter: blur(10px);
+    }
+
+    .home .homeText h1 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .home .homeText h2 {
+        font-size: 25px;
+    }
+
+    .home .homeText p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .home .homeImage{
+        display: none;
+    }
+
+    .mission {
+        padding: 7px;
+        margin: auto;
+    }
+
+    .mission .mission-wrapper {
+        flex-wrap: wrap;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+    }
+
+    .mission .mission-wrapper .mission-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mission .mission-wrapper .mission-item .mission-img {
+        margin-bottom: 5px;
+        padding: 20px;
+    }
+
+    .mission .mission-wrapper .mission-item .mission-img img {
+        width: 55%;
+    }
+
+    .mission .mission-wrapper .mission-item .mission-text {
+        padding: 5px 12px;
+    }
+
+    .mission .mission-wrapper .mission-item .mission-text h2 {
+        text-decoration: underline;
+    }
+
+    .features h2{
+        margin-top: 0px;
+    }
+
+    .contact h1 {
+        font-size: 30px;
+        padding: 2px;
     }
 
 }

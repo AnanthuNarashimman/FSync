@@ -38,4 +38,14 @@
 .mailbox button:hover {
     background-color: #4635B1;
 }
+
+@media (max-width:678px) {
+    .mailbox {
+        margin-top: 20px;
+    }
+
+    .mailbox h2 {
+        margin-top: 0px;
+    }
+}
   

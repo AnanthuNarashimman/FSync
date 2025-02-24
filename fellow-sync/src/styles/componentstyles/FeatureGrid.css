@@ -63,3 +63,12 @@
     color: #666;
     line-height: 1.5;
 }
+
+@media (max-width : 678px) {
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
