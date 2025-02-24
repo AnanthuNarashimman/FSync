@@ -311,7 +311,7 @@ body::-webkit-scrollbar-thumb {
         background: #4C62BF;
         border-radius: 10px;
         overflow: hidden;
-        transition: 4s ease;
+        transition: .5s ease;
         z-index: -100;
     }
 
