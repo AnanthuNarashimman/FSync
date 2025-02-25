@@ -130,12 +130,12 @@ body {
 }
 
 .logarea .formarea .desarea h3 {
-    font-size: 30px;
+    font-size: 35px;
     margin-top: -5px;
 }
 
 .logarea .formarea .desarea p {
-    font-size: 17px;
+    font-size: 19px;
 }
 
 .formarea .formbox {
@@ -163,6 +163,16 @@ body {
 
 .formarea .formbox .form h2 {
     text-align: center;
+    font-size: 30px;
+}
+
+.formarea .formbox p {
+    font-size: 19px;
+}
+
+.formarea .formbox a {
+    color: #4635B1;
+    font-weight: 600;
 }
 
 .formarea .formbox form {
@@ -187,7 +197,7 @@ body {
 .formarea .formbox .inputarea label {
     display: block;
     position: absolute;
-    left: 20%;
+    left: 22%;
     top: 50%;
     font-size: 16px;
     transform: translateY(-50%);
@@ -234,8 +244,8 @@ body {
 }
 
 .formarea .formbox .buttonarea .continueggl {
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     background: white;
     display: flex;
     justify-content: center;
@@ -260,7 +270,7 @@ body {
 @media (max-width:768px) {
 
     body {
-        margin: 50px 0 0 0 ;
+        margin: 70px 0 0 0 !important;
         overflow: auto;
     }
 
@@ -310,7 +320,7 @@ body {
     }
 
     .formarea .formbox .inputarea label {
-        left: 10%;
+        left: 15%;
     }
 
     .logarea .formarea .desarea h3 {
