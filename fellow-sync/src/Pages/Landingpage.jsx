@@ -1,4 +1,4 @@
-import logo from '../assets/Images/Fsync.svg';
+import logo from '../assets/Images/FSync.svg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleDown} from '@fortawesome/free-solid-svg-icons'
 import '../styles/pagestyles/landingpage.css';
@@ -9,7 +9,12 @@ import Barriers from '../assets/Images/Barriers.png';
 import FeaturesGrid from '../Components/FeaturesGrid.jsx';
 import Mailbox from '../Components/Mailbox.jsx';
 
+import { useNavigate } from 'react-router-dom';
+
 function Landingpage() {
+
+    const navigate = useNavigate();
+
     function navslide() {
         const navitems = document.querySelector('.nav-items');
         const hamicon = document.querySelector('.downicon');
@@ -27,19 +32,19 @@ function Landingpage() {
         
         
                     <ul className="nav-items">
-                        <li><a href="">Welcome</a></li>
-                        <li><a href="">Mission</a></li>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#home">Welcome</a></li>
+                        <li><a href="#mission">Mission</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
         
                     <div className="logbtn">
-                        <button>Sign Up</button>
+                        <button onClick={() => navigate("/logpage")}>Sign Up</button>
                     </div>
         </div>
 
 
-        <div className="home">
+        <div className="home" id='home'>
             <div className="homeText homeItems">
             <div className="homeTextContainer">
             <h1>Fellow <span>Sync</span></h1>
@@ -52,7 +57,7 @@ function Landingpage() {
             </div>
         </div>
 
-        <div className="mission">
+        <div className="mission" id='mission'>
             <h1>Mission</h1>
 
             <div className="mission-wrapper">
@@ -62,9 +67,8 @@ function Landingpage() {
                 </div>  
                 <div className="mission-text">
                 <h2>Personalized Learning</h2>  
-                <p>Education should be tailored to individual needs. Everyone has a unique pace and interests, whether in technical or
-                    non-technical fields. <b>FellowSync</b> helps create a personalized learning suite by connecting you with like-minded
-                    individuals, making learning more engaging and effective.</p> 
+                <p>Education should match individual needs, as everyone learns at their own pace and interests. <b>FellowSync</b> 
+                    personalizes learning by connecting like-minded individuals for a more engaging experience.</p> 
                 </div> 
             </div>  
 
@@ -74,9 +78,8 @@ function Landingpage() {
                     </div>
                 <div className="mission-text">
                 <h2>Bridging the Connectivity Gap</h2>  
-                <p>Despite having multiple platforms to connect with people globally, there's no dedicated space focused solely on
-                    education. <b>FellowSync</b> fills this gap by helping you connect with like-minded learners worldwide, fostering
-                    meaningful educational collaborations.</p>
+                <p>Despite many global connection platforms, none focus solely on education. <b>FellowSync</b> fills this gap by linking 
+                    like-minded learners for meaningful collaboration.</p>
                 </div>  
             </div>  
 
@@ -86,22 +89,21 @@ function Landingpage() {
                 </div> 
                 <div className="mission-text">
                 <h2>Breaking Traditional Learning Barriers</h2>  
-                <p>Tired of sticking to a rigid syllabus? With <b>FellowSync</b>, you can go beyond traditional learning. Join groups that
-                    share your interests, participate in meetups, events, and live sessions, and explore learning on your own terms.
-                    Education should be about curiosity, not constraints.</p>  
+                <p>Tired of a rigid syllabus? <b>FellowSync</b> lets you explore learning beyond tradition. Join interest-based groups, 
+                    attend events, and learn on your terms—driven by curiosity, not constraints.</p>  
                 </div> 
             </div>  
 
             </div>
         </div>
 
-        <div className="features">
+        <div className="features" id='features'>
 
         <FeaturesGrid />
 
         </div>
 
-        <div className="contact">
+        <div className="contact" id='contact'>
 
             <h1>Feel free to give feedback or recommendations!</h1>
 
