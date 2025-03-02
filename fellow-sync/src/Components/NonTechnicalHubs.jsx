@@ -8,13 +8,13 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const thhubDetails = [
     {
-        title: "Web Development",
-        description: "Crafting the future of the web—one line of code at a time!",
+        title: "Canvas Chronicles",
+        description: "Unleash your imagination, one brushstroke at a time—where colors speak louder than words!",
         img: Painting
     },
     {
-        title: "Mechanical Mystery",
-        description: "Breaking, fixing, and engineering the world around us!",
+        title: "Stage Crafters",
+        description: "Step into the spotlight, embrace the stage—where every role is a new story waiting to be told!",
         img: Acting
     }
 ]
