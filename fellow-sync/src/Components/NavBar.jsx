@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import '../styles/componentstyles/navbar.css';
 
 
-import logo from '../assets/Images/FSync.svg';
+import logo from '../assets/Images/Fsync.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
