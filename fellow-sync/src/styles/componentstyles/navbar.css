@@ -1,0 +1,224 @@
+.navigation-bar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(254, 252, 252, 0.942);
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: drop-shadow(0px 0.5px 2px #666);
+    z-index: 100;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navigation-bar .searcharea {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navigation-bar .searcharea .search {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #5a5a5a;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.navigation-bar .searcharea input {
+    width: 85%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1.5px solid #666;
+    font-size: 16px;
+}
+
+.navigation-bar .searcharea input::placeholder {
+    font-size: 17px;
+}
+
+.navlogo {
+    width: 10%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlogo img {
+    width: 350px;
+}
+
+.navigation-items {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Poppins';
+}
+
+.navigation-items a {
+    color: #666;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .3s ease;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.navigation-items a:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    font-size: 35px;
+    color: #5c64db;
+    margin-right: 2%;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.message {
+    font-size: 35px;
+    cursor: pointer;
+    color: #FFC107;
+    margin-right: 2%;
+    transition: .3s ease;
+}
+
+.profile:hover {
+    transform: translateX(-1px) translateY(-1px);
+    filter: drop-shadow(1px 3px 2px #0000009e);
+}
+
+.message:hover {
+    transform: translateX(-1px) translateY(-1px);
+    filter: drop-shadow(1px 3px 2px #00000047);
+}
+
+@media (max-width: 678px) {
+
+    .navigation-bar {
+        height: 60px;
+    }
+
+    .hamburger {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        margin-left: 30%;
+    }
+
+    .hamburger span {
+        height: 2.75px;
+        background: #616060;
+        width: 100%;
+        border-radius: 10px;
+        transition: transform .5s ease;
+    }
+
+    .span-1-active {
+        transform: translateY(7px) rotate(45deg);
+        height: 3.5px !important;
+        /* background: #E53935 !important; */
+    }
+
+    .span-2-active {
+        display: none;
+    }
+
+    .span-3-active {
+        transform: translateY(-3.5px) rotate(-45deg);
+        height: 3.5px !important;
+        /* background: #E53935 !important; */
+    }
+
+    .navigation-items {
+        position: absolute;
+        flex-direction: column;
+        top: 45px;
+        right: 0;
+        transform: translateX(1000px);
+        gap: 110px;
+        width: 100%;
+        height: calc(100vh - 115px);
+        padding: 30px 15px;
+        background: #4C62BF;
+        transition: .5s ease;
+    }
+
+    .active {
+        transform: translateX(0);
+    }
+
+    .navigation-items li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation-items a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .navlogo {
+        height: 50px;
+        width: 25%;
+    }
+
+    .navlogo img {
+        width: 250px;
+    }
+
+    .navigation-bar .searcharea {
+        position: absolute;
+        top: 76px;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 1s ease;
+        z-index: -101;
+    }
+
+    .searcharea.hidden {
+        transform: translateX(50%);
+    }
+
+    .searcharea.visible {
+        transform: translateX(-50%);
+    }
+
+    .navigation-bar .searcharea input {
+        border: none;
+        width: 90%;
+    }
+
+    .profile {
+        margin-right: 5%;
+        font-size: 30px;
+    }
+
+    .message {
+        margin-right: 1%;
+        font-size: 30px;
+    }
+}
+  

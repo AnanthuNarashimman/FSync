@@ -4,7 +4,6 @@ import logo from '../assets/Images/Fsync.svg';
 import google from '../assets/Images/Google.png'
 
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
 
@@ -14,7 +13,7 @@ function Logpage() {
     const navigate = useNavigate();
 
     function Focus(e) {
-        e.target.parentElement.querySelector('label').style.transform = 'translateY(-165%)';
+        e.target.parentElement.querySelector('label').style.transform = 'translateY(-205%)';
       }
     
       function Notfocus(e) {
@@ -52,7 +51,7 @@ function Logpage() {
                 <button className='signupbtn pcbtn active' onClick={MoveToSignUp}>
                     Sign Up
                 </button>
-                <button className="about" onClick={() => navigate('/')}>
+                <button className="about" onClick={() => navigate("/")}>
                     About us
                 </button>
             </div>
