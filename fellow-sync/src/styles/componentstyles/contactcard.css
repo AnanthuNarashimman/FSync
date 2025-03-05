@@ -1,0 +1,98 @@
+.contact-container {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top: 7px;
+}
+
+.contact-container textarea {
+    resize: none;
+}
+
+.contact-container h2 {
+    font-size: 35px;
+}
+
+.contact-container h2, h3 {
+    color: #333;
+}
+
+.reviewform {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container label {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.contact-container input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16.5px;
+}
+
+.contact-container input {
+    font-size: 20px;
+}
+
+.contact-container button {
+    padding: 10px;
+    background-color: #5c64db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 15%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.contact-container button:hover {
+    background-color: #4a52c6;
+}
+
+.complaint-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #e63946;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.complaint-btn:hover {
+    background-color: #c52835;
+}
+
+@media (max-width: 678px) {
+    .contact-container {
+        width: 90%;
+        margin-top: 30px;
+        box-shadow: none;
+    }
+
+    .contact-container h2 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .contact-container input {
+        font-size: 18px;
+    }
+
+    .contact-container button {
+        width: 40%;
+    }
+}

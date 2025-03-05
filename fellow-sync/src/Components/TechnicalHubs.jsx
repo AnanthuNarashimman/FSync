@@ -24,7 +24,7 @@ function TechnicalHubs() {
     <div className="technicalhub-section">
         <div className="techhub-grid">
             {thhubDetails.map((thhubdetail, index) => (
-                <div className="techhubcard">
+                <div className="techhubcard" key={index}>
                 <div className="thub-text">
                     <h2>{thhubdetail.title}</h2>
                     <p>{thhubdetail.description}</p>

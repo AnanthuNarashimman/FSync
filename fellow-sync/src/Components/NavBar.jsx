@@ -57,8 +57,8 @@ function NavBar() {
         <ul className="navigation-items">
             <li><a href="/home">Home</a></li>
             <li><a href="/mycommunities">My Communities</a></li>
-            <li><a href="">Manage Communities</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="/managecommunities">Manage Communities</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
 
         <div className="hamburger" onClick={hamactive}>
