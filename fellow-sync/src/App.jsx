@@ -5,7 +5,7 @@ import MyCommunityPage from "./Pages/MyCommunityPage.jsx";
 import ManageCommunities from "./Pages/ManageCommunities.jsx";
 import Contactpage from "./Pages/Contactpage.jsx";
 import Profilepage from "./Pages/Profilepage.jsx";
-import Chatbot from "./Pages/ChatBot.jsx";
+import Chatbot from "./Pages/Chatbot.jsx";
 import './styles/app.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
