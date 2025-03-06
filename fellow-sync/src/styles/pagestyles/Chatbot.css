@@ -1,0 +1,118 @@
+.chat-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f5f5f5;
+    margin-top: -70px;
+    font-family: 'Poppins';
+  }
+  
+  .chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chat-messages::-webkit-scrollbar {
+    width:5px;
+  }
+
+   .chat-messages::-webkit-scrollbar-thumb {
+    background: #4635B1;
+    border-radius: 10px;
+  }
+  
+  .chat-bubble {
+    max-width: 70%;
+    margin: 8px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    padding: 0px 5px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .user {
+    align-self: flex-end;
+    background: #007bff;
+    color: white;
+  }
+  
+  .bot {
+    align-self: flex-start;
+    background: #ddd;
+    color: black;
+  }
+  
+  .chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 15px;
+    background: transparent;
+    border-radius: 25px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    filter: drop-shadow(2px 3px 5px #66666680);
+  }
+  
+  .chat-input textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-wrap: wrap;
+  }
+
+  .chat-input textarea:focus {
+    outline: none;
+  }
+
+  .chat-input textarea::placeholder {
+    font-family: 'Poppins';
+    font-size: 17px;
+  }
+  
+  .chat-input button {
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 17px;
+  }
+
+@media (max-width: 678px) {
+    .chat-container {
+        height: calc(100vh - 50px);
+    }
+
+    .chat-input {
+        width: 100%;
+        margin-bottom: 0px;
+        gap: 0px;
+        padding: 15px;
+    }
+
+    .chat-input button {
+        padding: 10px;
+        width: 75px;
+    }
+
+    .bot {
+        max-width: 90%;
+    }
+
+}
+  

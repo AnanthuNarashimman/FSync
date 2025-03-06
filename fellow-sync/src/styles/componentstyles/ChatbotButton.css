@@ -1,0 +1,28 @@
+.chatbotButton {
+    position: fixed;
+    bottom: 2.5%;
+    right: 1%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    border: 5px solid #6a73eb;
+    background: #E9ECEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    transition: .3s ease;
+}
+
+.chatbotButton:hover {
+    opacity: 1;
+    transform: translateX(-1px) translateY(-1px);
+    filter: drop-shadow(4px 2px 2px #66666674);
+}
+
+.chatbotButton img {
+    width: 100%;
+    height: auto;
+}
