@@ -134,7 +134,7 @@ def google_callback():
     session["username"] = user_dict["name"]
     session["usermail"] = user_dict["email"]
 
-   return redirect("https://f-sync-sigma.vercel.app/home")
+    return redirect("https://f-sync-sigma.vercel.app/home")
 
 
 @app.route('/create_community', methods=['POST'])
