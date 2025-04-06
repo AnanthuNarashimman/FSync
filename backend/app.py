@@ -83,9 +83,9 @@ def index():
     print("Session Data:", session)  #  Debugging line
     loguser = session.get("user")
     if loguser:
-        return redirect("http://localhost:5173/home")
+        return redirect("https://f-sync-sigma.vercel.app/home")
     else:
-        return redirect("http://localhost:5173/logpage")  # Fix infinite loop issue
+        return redirect("https://f-sync-sigma.vercel.app/logpage")  # Fix infinite loop issue
 
 
         
@@ -134,7 +134,8 @@ def google_callback():
     session["username"] = user_dict["name"]
     session["usermail"] = user_dict["email"]
 
-    return redirect("http://localhost:5173/home")
+   return redirect("https://f-sync-sigma.vercel.app/home")
+
 
 @app.route('/create_community', methods=['POST'])
 def create_community():
@@ -201,7 +202,7 @@ def register():
         "google_id": None
     })
 
-    return redirect("http://localhost:5173/logpage")
+    return redirect("https://f-sync-sigma.vercel.app/logpage")
 
 #  **Manual User Login**
 @app.route("/login", methods=["POST"])
