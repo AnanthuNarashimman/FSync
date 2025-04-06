@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
-import '../styles/componentstyles/backbutton.css';
+import '../styles/componentstyles/Backbutton.css';
 
 function Backbutton() {
 
