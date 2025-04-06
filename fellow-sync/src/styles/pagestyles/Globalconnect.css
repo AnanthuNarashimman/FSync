@@ -1,0 +1,16 @@
+.develop {
+    width: 40%;
+    height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.developtext {
+    position: absolute;
+    bottom: 10%;
+    color: #666;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    left: 50%;
+    transform: translateX(-50%);
+}

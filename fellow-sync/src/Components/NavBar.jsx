@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import '../styles/componentstyles/navbar.css';
 
 
-import logo from '../assets/Images/Fsync.svg';
+import logo from '../assets/Images/FSync.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -13,7 +14,9 @@ import { faMessage } from '@fortawesome/free-solid-svg-icons';
 function NavBar() {
 
   const [showSearch, setShowSearch] = useState(true);
-  let lastScrollY = window.scrollY; // Track last scroll position
+  let lastScrollY = window.scrollY; 
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,7 +72,7 @@ function NavBar() {
 
         <FontAwesomeIcon icon={faMessage} className="message" />
 
-        <FontAwesomeIcon icon={faUser} className="profile"/>
+        <FontAwesomeIcon icon={faUser} className="profile" onClick={() => navigate("/profile")}/>
         
     </div>
   )

@@ -1,16 +1,19 @@
 .managecommunitytitle {
     font-size: 50px;
     text-align: center;
+    margin: auto;
     margin-top: 35px;
-    color: #ffbf00;
+    color: white;
+    background: #ffbf00;
+    padding: 5px 10px;
+    width: fit-content;
     text-shadow: 1px 2px 2px #66666633;
-    text-decoration: underline;
+    border-radius: 5px;
 }
 
 @media (max-width: 678px) {
     .managecommunitytitle {
-        font-size: 38px;
+        font-size: 32px;
         margin-top: 70px;
-        text-decoration: underline;
     }
 }

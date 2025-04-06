@@ -1,5 +1,5 @@
-import ContactCard from "../Components/ContactCard.jsx"
-import NavBar from "../Components/NavBar.jsx"
+import ContactCard from "../Components/ContactCard.jsx";
+import NavBar from "../Components/NavBar.jsx";
 
 import '../styles/pagestyles/contactpage.css';
 

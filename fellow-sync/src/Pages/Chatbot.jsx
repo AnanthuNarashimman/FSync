@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 
 
 import '../styles/pagestyles/Chatbot.css';
+import Backbutton from "../Components/Backbutton.jsx";
 
 const ChatPage = () => {
   const [messages, setMessages] = useState([]);
@@ -76,6 +77,8 @@ const ChatPage = () => {
         </button>
       </div>
     </div>
+
+    <Backbutton />
     </>
   );
 };

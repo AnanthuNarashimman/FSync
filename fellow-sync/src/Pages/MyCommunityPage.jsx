@@ -1,6 +1,8 @@
 import NavBar from "../Components/NavBar.jsx";
 import TechnicalHubs from "../Components/TechnicalHubs.jsx";
 import NonTechnicalHubs from "../Components/NonTechnicalHubs.jsx";
+import ChatbotButton from "../Components/ChatbotButton.jsx";
+
 
 import Learning from '../assets/Images/Learning.jpg';
 import Dancing from '../assets/Images/Dancing.jpg';
@@ -36,6 +38,8 @@ function MyCommunityPage() {
     <NonTechnicalHubs />
     
     </div>
+
+    <ChatbotButton />
 
     </>
   )

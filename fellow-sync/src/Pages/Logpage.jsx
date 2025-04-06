@@ -5,6 +5,7 @@ import google from '../assets/Images/Google.png'
 
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 
 
@@ -36,6 +37,39 @@ function Logpage() {
         document.querySelector('.loginbtn').classList.remove('active'); 
     }
 
+    function handleGoogleLogin() {
+        window.location.href = "http://localhost:5000/login/google";
+    }
+
+    
+    const [mail,setMail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleLogin = async (event) => {
+        event.preventDefault();
+    
+        try {
+            const response = await axios.post(
+                "http://localhost:5000/login",  
+                {mail,password, 
+                },
+                {
+                    headers: { "Content-Type": "application/json" }, 
+                    withCredentials: true 
+                }
+            );
+    
+            console.log("Login Successful", response.data);
+
+            if(response.status) {
+                navigate('/home');
+            }
+
+        } catch (error) {
+            console.log("Login failed:", error.response?.data || error.message);
+        }
+    };
+    
 
     return(
         <>
@@ -76,7 +110,7 @@ function Logpage() {
                     
                     <div className="signupform form">
                     <h2>Sign Up</h2>
-                    <form>
+                    <form action='http://localhost:5000/register' method='POST'>
                         <div className="nameArea inputarea">
                             <label>Username</label>
                             <input type="text" name='username' onFocus={Focus} onBlur={Notfocus} required />
@@ -93,7 +127,7 @@ function Logpage() {
                         <div className="buttonarea">
                         <input type="submit" value="Register" />
                         <div className="continueggl">
-                            <img src={google} alt="" />
+                            <img src={google} alt="" onClick={handleGoogleLogin}/>
                         </div>
                         </div>
                         
@@ -103,20 +137,20 @@ function Logpage() {
 
                     <div className="signinform form">
                     <h2>Sign In</h2>
-                    <form>
+                    <form action='http://localhost:5000/login' method='POST' onSubmit={handleLogin}>
                         <div className="mailArea inputarea">
                             <label>EMail</label>
-                            <input type="email" name='email' onFocus={Focus} onBlur={Notfocus} required />
+                            <input type="email" name='email' onFocus={Focus} onBlur={Notfocus} required onChange={(e) => setMail(e.target.value)}/>
                         </div>
                         <div className="passwordArea inputarea">
                             <label>Password</label>
-                            <input type="password" name='password' onFocus={Focus} onBlur={Notfocus} required />
+                            <input type="password" name='password' onFocus={Focus} onBlur={Notfocus} required onChange={(e) => setPassword(e.target.value)}/>
                         </div>
 
                         <div className="buttonarea">
-                        <input type="submit" value="Log in" />
+                        <input type="submit" value="Log in"/>
                         <div className="continueggl">
-                            <img src={google} alt="" />
+                            <img src={google} alt="" onClick={handleGoogleLogin}/>
                         </div>
                         </div>
                         

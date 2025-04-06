@@ -1,0 +1,76 @@
+.community-finder-container {
+    padding: 24px;
+    width: 100vw;
+    margin: auto;
+    margin-top: -50px;
+  }
+  
+  .title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #5c64db;
+  }
+  
+  .search-bar {
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    margin-top: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 17px;
+  }
+
+  .search-bar::placeholder {
+    font-size: 17px;
+  }
+  
+  .community-card {
+    padding: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #f9f9f9;
+    transition: box-shadow 0.2s;
+    border-radius: 15px;
+  }
+
+  .community-card h2 {
+    font-size: 25px;
+  }
+
+  .community-card p {
+    color: #666;
+    font-size: 18px;
+  }
+
+  .cardgrid {
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .community-card:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .community-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .community-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .no-results {
+    color: gray;
+    font-size: 14px;
+  }
+  

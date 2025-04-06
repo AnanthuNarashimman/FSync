@@ -1,10 +1,14 @@
 .mycommunitytitle {
     font-size: 50px;
     text-align: center;
+    margin: auto;
     margin-top: 35px;
-    color: #ffbf00;
+    color: white;
+    background: #ffbf00;
+    border-radius: 5px;
+    padding: 5px 10px;
     text-shadow: 1px 2px 2px #66666633;
-    text-decoration: underline;
+    width: fit-content;
 }
 
 .Hub {
@@ -44,7 +48,6 @@
     .mycommunitytitle {
         font-size: 38px;
         margin-top: 70px;
-        text-decoration: underline;
     }
 
     .HubTitle {
