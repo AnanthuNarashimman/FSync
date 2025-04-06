@@ -13,7 +13,7 @@ function CommunityCard() {
     
       const getCommunityData = async () => {
         try {
-          const response = await fetch("http://localhost:5000/testgetdata", {
+          const response = await fetch("https://f-sync-sigma.vercel.app/testgetdata", {
             method: "GET",
             headers: { "Content-Type": "application/json" },
             credentials: "include",

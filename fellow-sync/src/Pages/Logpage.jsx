@@ -38,7 +38,7 @@ function Logpage() {
     }
 
     function handleGoogleLogin() {
-        window.location.href = "http://localhost:5000/login/google";
+        window.location.href = "https://f-sync-sigma.vercel.app/login/google";
     }
 
     
@@ -50,7 +50,7 @@ function Logpage() {
     
         try {
             const response = await axios.post(
-                "http://localhost:5000/login",  
+                "https://f-sync-sigma.vercel.app/login",  
                 {mail,password, 
                 },
                 {
@@ -110,7 +110,7 @@ function Logpage() {
                     
                     <div className="signupform form">
                     <h2>Sign Up</h2>
-                    <form action='http://localhost:5000/register' method='POST'>
+                    <form action='https://f-sync-sigma.vercel.app/register' method='POST'>
                         <div className="nameArea inputarea">
                             <label>Username</label>
                             <input type="text" name='username' onFocus={Focus} onBlur={Notfocus} required />
@@ -137,7 +137,7 @@ function Logpage() {
 
                     <div className="signinform form">
                     <h2>Sign In</h2>
-                    <form action='http://localhost:5000/login' method='POST' onSubmit={handleLogin}>
+                    <form action='https://f-sync-sigma.vercel.app/login' method='POST' onSubmit={handleLogin}>
                         <div className="mailArea inputarea">
                             <label>EMail</label>
                             <input type="email" name='email' onFocus={Focus} onBlur={Notfocus} required onChange={(e) => setMail(e.target.value)}/>

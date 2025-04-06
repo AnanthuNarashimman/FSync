@@ -15,9 +15,10 @@ os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
 app = Flask(__name__)
 
-CORS(app,supports_credentials=True, resources={r"/*": {"origins": "http://localhost:5173"}})
+FRONTEND_URL = "https://f-sync-sigma.vercel.app"
 
-socketio = SocketIO(app, cors_allowed_origins="http://localhost:5173")
+CORS(app, supports_credentials=True, resources={r"/*": {"origins": FRONTEND_URL}})
+socketio = SocketIO(app, cors_allowed_origins=FRONTEND_URL)
 app.secret_key = "HelloWorld"
 app.config["SESSION_PERMANENT"] = True
 app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(minutes=15)

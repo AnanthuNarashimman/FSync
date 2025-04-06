@@ -8,9 +8,9 @@ export const UserProvider = ({ children }) => {
     const [mail, setUserMail] = useState("Fetching...");
 
     useEffect(() => {
-        const socket = io("http://127.0.0.1:5000");
+        const socket = io("https://f-sync-sigma.vercel.app");
         if (!localStorage.getItem("username") || !localStorage.getItem("mail")) {
-            fetch("http://localhost:5000/get-user", { 
+            fetch("https://f-sync-sigma.vercel.app/get-user", { 
                 method: "GET",
                 credentials: "include"
             })

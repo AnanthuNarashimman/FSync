@@ -24,7 +24,7 @@ const CreateCommunity = () => {
     setMessage("");
 
     try {
-      const response = await fetch("http://localhost:5000/create_community", {
+      const response = await fetch("https://f-sync-sigma.vercel.app/create_community", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

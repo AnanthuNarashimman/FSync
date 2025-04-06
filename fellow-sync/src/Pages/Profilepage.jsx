@@ -15,7 +15,7 @@ const Profilepage = () => {
   
 
   function handleLogout() {
-    window.location.href = "http://localhost:5000/logout";
+    window.location.href = "https://f-sync-sigma.vercel.app/logout";
   }
 
   return (
